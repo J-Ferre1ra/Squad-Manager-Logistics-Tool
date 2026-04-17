@@ -12,11 +12,11 @@ dadosBrutos.unshift("Goleiro")
 dadosBrutos.pop
 
 const calculoPerformance = dadosBrutos.map(atleta => {
-    
-    const media  = atleta.notas.reduce((acc, atleta, index) => acc + this.notas[index], 0)
+    let reusltadoMedia =0
+    const soma  = atleta.notas.reduce((acc, nota) => acc + nota, 0)
 
     if (atleta.notas.length > 0) {
-        const reusltadoMedia = media / atleta.notas.length
+         reusltadoMedia = soma / atleta.notas.length
     }
     
     return {
