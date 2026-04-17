@@ -13,7 +13,7 @@ dadosBrutos.pop
 
 const calculoPerformance = dadosBrutos.map(atleta => {
     let reusltadoMedia =0
-    const soma  = atleta.notas.reduce((acc, nota) => acc + nota, 0)
+    const soma = atleta.notas.reduce(acc, nota => acc + nota, 0)
 
     if (atleta.notas.length > 0) {
          reusltadoMedia = soma / atleta.notas.length
@@ -25,3 +25,15 @@ const calculoPerformance = dadosBrutos.map(atleta => {
     }
 
 })
+
+const filtragemTitulares = calculoPerformance.filter((atleta) => atleta.media >=7)
+console.log(filtrarTitulares);
+
+const calculoRateio = CUSTO_VIAGEM / filtragemTitulares.length
+
+console.log("== Relatório de Viagem Intercampi ==");
+for (const jogador of filtragemTitulares) {
+    console.log(`Atleta: ${jogador.nome} | Média: ${jogador.media.toFixed(1)}`);
+}
+console.log("---------------------------");
+console.log(`Custo por titular: ${calculoRateio.toFixed(2)}`);
