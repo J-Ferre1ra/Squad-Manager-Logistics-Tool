@@ -14,6 +14,9 @@ Nesta task, apliquei conceitos fundamentais de engenharia de software:
 - **Programação Funcional:** Utilização de `map`, `filter` e `reduce` para processamento de dados imutáveis.
 - **Lógica de Negócio:** Cálculos dinâmicos de média e rateio financeiro.
 
+## Desafios
+Um desafio superado foi garantir que a adição de novos membros ao array seguisse o contrato de dados (objeto com notas) para evitar erros de execução no método .map().
+
 ## 🚀 Como Executar
 1. Clone o repositório.
 2. Certifique-se de ter o Node.js instalado.

@@ -8,12 +8,12 @@ const dadosBrutos = [
 
 const CUSTO_VIAGEM = 500; 
 
-dadosBrutos.unshift("Goleiro")
-dadosBrutos.pop
+dadosBrutos.unshift({nome: "Goleiro", notas: [], idade: 30})
+dadosBrutos.pop()
 
 const calculoPerformance = dadosBrutos.map(atleta => {
     let reusltadoMedia =0
-    const soma = atleta.notas.reduce(acc, nota => acc + nota, 0)
+    const soma = atleta.notas.reduce((acc, nota) => acc + nota, 0)
 
     if (atleta.notas.length > 0) {
          reusltadoMedia = soma / atleta.notas.length
@@ -27,7 +27,6 @@ const calculoPerformance = dadosBrutos.map(atleta => {
 })
 
 const filtragemTitulares = calculoPerformance.filter((atleta) => atleta.media >=7)
-console.log(filtrarTitulares);
 
 const calculoRateio = CUSTO_VIAGEM / filtragemTitulares.length
 
